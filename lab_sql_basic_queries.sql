@@ -1,6 +1,6 @@
 USE sakila;
 # 1. Display all available tables in the Sakila database.
-SELECT name FROM sys.sakila;
+SHOW TABLES;
 
 # 2. Retrieve all the data from the tables actor, film and customer.
 SELECT * FROM actor;
@@ -35,7 +35,7 @@ SELECT COUNT(*) FROM staff; #2
 SELECT count(*) FROM inventory; #4581
 
 #have been rented  #############################################################################################
-SELECT * #COUNT(inventory_id)
+SELECT COUNT(*)
 FROM rental;
 
 ## 5.4 Determine the number of distinct last names of the actors in the database.
